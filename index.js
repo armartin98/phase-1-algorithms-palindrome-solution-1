@@ -1,9 +1,28 @@
+//Problem in own words
+/*
+  make a function that takes a word and checks to see if it is a palindrome.
+  if the word is spelled the same backwards and forwards the function will
+  return true.
+
+  mom === mom => true
+  abc === cba => false
+*/
+
 function isPalindrome(word) {
   // Write your algorithm here
+  const  reversedWord = word.split('').reverse().join('')
+
+  return word === reversedWord
 }
 
 /* 
   Add your pseudocode here
+  reverse the string 
+
+  if reversed is the same 
+    return true
+  else
+    return false
 */
 
 /*
